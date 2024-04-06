@@ -35,7 +35,7 @@ public:
     }
 
     void stampa(){
-        cout <<"Elementi in coda: "<< endl;
+        cout <<"--------------" << endl;
         for(int i=start; i<stop; i++){
         cout << v[i] << endl; 
         } 
