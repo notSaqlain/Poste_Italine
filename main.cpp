@@ -9,7 +9,6 @@ int main() {
     
     Coda c = Coda(1000);
 
-    c.stampa();
     c.enter(120);
     c.enter(55);
     c.enter(355);
@@ -20,7 +19,7 @@ int main() {
     cout << "Seleziona servizio [1-3]: " << endl;
     cout << "1. Spedizione" << endl;
     cout << "2. Ricezione" << endl;
-    cout << "3. Finanzarie" << endl;
+    cout << "3. Finanzarie" << "\n:";
     int servizio;
     cin >> servizio;
 
