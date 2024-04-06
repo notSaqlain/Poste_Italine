@@ -1,27 +1,8 @@
 #include <iostream>
 #include <string>
+#include "Coda.cpp"
 
-/*
-class poste {
-private:
-    string S; // spedizione
-    int R; //ricezione
-    int F; //finanzarie
-public:
-    poste(string servizio){
-        if (servizio == "spedizione"){
-            
-        } else if (servizio == "ricezione"){
-
-        } else if (servizio == "finanzarie"){
-
-        } else {
-            cout << "Servizio non disponibile" << endl;
-        }
-    }
-
-};
-*/
+using namespace std;
 
 int main() {
     
