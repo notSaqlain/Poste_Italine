@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Coda.cpp"
+#include "poste.cpp"
 
 using namespace std;
 
