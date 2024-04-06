@@ -15,7 +15,7 @@ public:
     }
 
     void enter(int val){
-        if(start = stop){
+        if(start == stop){
             cout << "Coda piena" << endl;
             return;
         }
