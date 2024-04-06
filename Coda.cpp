@@ -29,7 +29,7 @@ int exit(){
         cout<<" coda vuota!";
         return -1;
     }
-    int val = v [start];
+    int val = v[start];
     start = start + 1;
     return val;
 }

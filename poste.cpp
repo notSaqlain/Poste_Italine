@@ -11,6 +11,8 @@ private:
     
 public:
     poste(string servizio){
+        Coda c = Coda(1000);
+
         if (servizio == "spedizione"){
             spedizione();
         } else if (servizio == "ricezione"){
@@ -23,7 +25,10 @@ public:
     }
 
     void spedizione(){
+
         cout << "Servizio di spedizione" << endl;
+        // verra chiamato la prossima persona in coda
+
     }
 
     void ricezione(){
