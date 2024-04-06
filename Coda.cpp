@@ -1,40 +1,45 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-class Coda {
+class Coda
+{
 private:
-    int size, start, stop;
-    int * v;
+
+int size, start, stop;
+int * v;
 
 public:
-    Coda(int size){
-        this->size = size;
-        v = new int [size];
-        start = stop = 0;
-    }
 
-    void enter(int val){
-        if(start == stop){
-            cout << "Coda piena" << endl;
-            return;
-        }
-        v[stop] = val;
-        stop++;
-    }
+Coda(int size){
+    this->size = size;
+    v = new int[size];
+    start = stop = 0;
+} 
 
-    int exit(){
-        if (start >= stop){
-            cout << "Coda vuota" << endl;
-            return v[start++];
-        }
+void enter(int val){
+    if(stop >= size){cout << "coda piena!"; return;}
+    v[stop] = val;
+    stop ++;
+}
+
+int exit(){
+    if(start >= stop ){
+        cout<<" coda vuota!";
         return -1;
     }
+    int val = v [start];
+    start = start + 1;
+    return val;
+}
 
-    void stampa(){
-        for (int i = start; i < stop; i++){
-            cout << v[i] << " ";
-        }
-        cout << "----------------------" << endl;
-    }
+void stampa(){
+    cout <<"Elementi in coda: "<< endl;
+    for(int i=start; i<stop; i++){
+       cout << v[i] << endl; 
+    } 
+    cout <<"--------------" << endl;
+}
+
 };
