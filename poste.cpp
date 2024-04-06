@@ -8,6 +8,7 @@ private:
     string S; // spedizione
     int R; //ricezione
     int F; //finanzarie
+    
 public:
     poste(string servizio){
         if (servizio == "spedizione"){
