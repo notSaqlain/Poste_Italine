@@ -17,7 +17,7 @@ int main() {
     c.enter(5);
     c.stampa();
 
-    cout << "Seleziona servizio: " << endl;
+    cout << "Seleziona servizio [1-3]: " << endl;
     cout << "1. Spedizione" << endl;
     cout << "2. Ricezione" << endl;
     cout << "3. Finanzarie" << endl;
