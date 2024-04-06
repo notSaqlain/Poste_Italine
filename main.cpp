@@ -3,17 +3,32 @@
 
 using namespace std;
 
-class pt {
+class Coda {
+private:
+    int size, start, stop;
+    int * v;
+    
+public:
+    Coda(int size){
+        this->size = size;
+        v = new int [size];
+        start = stop = 0;
+    }
+};
+
+class poste {
 private:
     string S; // spedizione
     int R; //ricezione
     int F; //finanzarie
-    int countS = 1;
-    int countR = 1
-    int countF = 1;
+    int codaS[100];
+    int codaR[100];
+    int codaF[100];
 
 public:
+    poste(string servizio){
 
+    }
 
 };
 
