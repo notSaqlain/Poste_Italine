@@ -1,8 +1,20 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main(){
+class pt {
+private:
+    int r; //ricezione
+    int f; //finanzarie
+    string s; // spedizione
+
+public:
+    
+};
+
+int main() {
+    
 
     return 0;
 }
