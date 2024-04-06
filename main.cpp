@@ -5,12 +5,16 @@ using namespace std;
 
 class pt {
 private:
-    int r; //ricezione
-    int f; //finanzarie
-    string s; // spedizione
+    string S; // spedizione
+    int R; //ricezione
+    int F; //finanzarie
+    int countS = 1;
+    int countR = 1
+    int countF = 1;
 
 public:
-    
+
+
 };
 
 int main() {
