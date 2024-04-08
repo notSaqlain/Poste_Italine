@@ -15,6 +15,9 @@ public:
     Coda(int size){
         this->size = size;
         v = new int[size];
+        for (int i=0; i<size; i++){
+            v[i] = 0;
+        }
         start = stop = 0;
     } 
 
