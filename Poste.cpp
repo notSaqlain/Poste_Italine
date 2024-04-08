@@ -8,6 +8,9 @@ class Poste {
 private:
     string servizio;
     int nR = 0, nS = 0, nF = 0;
+    Coda cR = Coda(1000, "ricezione");
+    Coda cS = Coda(1000, "spedizione");
+    Coda cF = Coda(1000, "finanzarie");
     /*
     string S; // spedizione
     int R; //ricezione
@@ -16,12 +19,7 @@ private:
     
 public:
     Poste(string servizio){
-
         this->servizio = servizio;
-
-        Coda cR = Coda(1000, "ricezione");
-        Coda cS = Coda(1000, "spedizione");
-        Coda cF = Coda(1000, "finanzarie");
 
     }
 
