@@ -6,13 +6,14 @@ using namespace std;
 class Coda {
 
 private:
-
+    string name;
     int size, start, stop;
     int * v;
 
 public:
 
-    Coda(int size){
+    Coda(int size, string name){
+        this->name = name;
         this->size = size;
         v = new int[size];
         for (int i=0; i<size; i++){
@@ -38,10 +39,9 @@ public:
     }
 
     void stampa(){
-        cout << endl;
-        cout <<"Coda: " << endl;
+        cout << "Elementi in coda << " << name << ": ";
         for(int i=start; i<stop; i++){
-        cout << v[i] << endl; 
+        cout << v[i] << " " << endl; 
         } 
         cout <<"--------------" << endl;
         cout << endl;
