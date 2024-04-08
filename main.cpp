@@ -17,7 +17,7 @@ int main() {
     }
     c.stampa();
 
-    while(){
+    while(true){
 
         cout << "Seleziona servizio [1-3]: " << endl;
         cout << "1. Spedizione" << endl;
@@ -27,14 +27,24 @@ int main() {
         cin >> servizio;
 
         if (servizio == 1){
-            poste p = poste("spedizione");
+            c.enter(1);
+            c.stampa();
+            Poste p = Poste("spedizione");
         } else if (servizio == 2){
-            poste p = poste("ricezione");
+            c.enter(1);
+            c.stampa();
+            Poste p = Poste("ricezione");
         } else if (servizio == 3){
-            poste p = poste("finanzarie");
+            c.enter(1);
+            c.stampa();
+            Poste p = Poste("finanzarie");
         } else {
+            c.enter(1);
+            c.stampa();
             cout << "Servizio non disponibile" << endl;
         }
+        c.exit();
+        c.stampa();
 
     }
 
