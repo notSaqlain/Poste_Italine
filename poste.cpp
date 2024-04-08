@@ -9,6 +9,7 @@ private:
     int R; //ricezione
     int F; //finanzarie
     Coda c = Coda(1000);
+    int count = 1;
     
 public:
     poste(string servizio){
@@ -21,23 +22,30 @@ public:
             finanzarie();
         } else {
             cout << "Servizio non disponibile" << endl;
-            c = Coda(1);
+            c = Coda(++count);
             c.stampa();
         }
+        c.exit();
     }
 
     void spedizione(){
         cout << "Servizio di spedizione" << endl;
         // verra chiamato la prossima persona in coda
+        c = Coda(++count);
+        c.stampa();
 
     }
 
     void ricezione(){
         cout << "Servizio di ricezione" << endl;
+        c = Coda(++count);
+        c.stampa();
     }
 
     void finanzarie(){
         cout << "Servizio finanzarie" << endl;
+        c = Coda(++count);
+        c.stampa();
     }
 
 };

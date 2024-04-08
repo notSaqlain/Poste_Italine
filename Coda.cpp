@@ -19,7 +19,7 @@ public:
     } 
 
     void enter(int val){
-        if(stop >= size){cout << "coda piena!"; return;}
+        if(stop >= size){cout << "coda piena!"<<endl; return;}
         v[stop] = val;
         stop ++;
     }
