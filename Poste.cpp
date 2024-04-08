@@ -11,15 +11,19 @@ private:
     Coda cR = Coda(1000, "ricezione");
     Coda cS = Coda(1000, "spedizione");
     Coda cF = Coda(1000, "finanzarie");
-    /*
-    string S; // spedizione
-    int R; //ricezione
-    int F; //finanzarie
-    */
     
 public:
     Poste(string servizio){
         this->servizio = servizio;
+        if (servizio == "spedizione"){
+            Client('s');
+        } else if (servizio == "ricezione"){
+            Client('r');
+        } else if (servizio == "finanzarie"){
+            Client('f');
+        } else {
+            cout << "Servizio non disponibile" << endl;
+        }
 
     }
 
