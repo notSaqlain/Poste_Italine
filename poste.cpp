@@ -25,7 +25,6 @@ public:
     }
 
     void spedizione(){
-
         cout << "Servizio di spedizione" << endl;
         // verra chiamato la prossima persona in coda
 
