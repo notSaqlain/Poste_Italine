@@ -6,31 +6,32 @@
 using namespace std;
 
 int main() {
-    
-    Coda c = Coda(1000);
+    int persone;
+    cout << "Benvenuto alle poste\n" << endl;
+    cout << "Quante persone ci sono in coda?" << endl;
+    cin >> persone;
 
-    c.enter(355);
-    c.exit();
-    c.enter(5);
-    c.stampa();
+    int i = 0;
 
-    cout << "Seleziona servizio [1-3]: " << endl;
-    cout << "1. Spedizione" << endl;
-    cout << "2. Ricezione" << endl;
-    cout << "3. Finanzarie" << "\n:";
-    int servizio;
-    cin >> servizio;
+    while (i < persone){
+        cout << "Seleziona servizio [1-3]: " << endl;
+        cout << "1. Spedizione" << endl;
+        cout << "2. Ricezione" << endl;
+        cout << "3. Finanzarie" << "\n:";
+        int servizio;
+        cin >> servizio;
 
-    if (servizio == 1){
-        poste p = poste("spedizione");
-    } else if (servizio == 2){
-        poste p = poste("ricezione");
-    } else if (servizio == 3){
-        poste p = poste("finanzarie");
-    } else {
-        cout << "Servizio non disponibile" << endl;
+        if (servizio == 1){
+            poste p = poste("spedizione");
+        } else if (servizio == 2){
+            poste p = poste("ricezione");
+        } else if (servizio == 3){
+            poste p = poste("finanzarie");
+        } else {
+            cout << "Servizio non disponibile" << endl;
+        }
+        i++;
     }
 
-    
     return 0;
 }
