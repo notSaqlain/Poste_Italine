@@ -26,6 +26,8 @@ public:
             c.stampa();
             finanzarie();
         } else {
+            c.enter(1);
+            c.stampa();
             cout << "Servizio non disponibile" << endl;
         }
         c.exit();
@@ -34,8 +36,6 @@ public:
 
     void spedizione(){
         cout << "Servizio di spedizione" << endl;
-        // verra chiamato la prossima persona in coda
-
     }
 
     void ricezione(){

@@ -38,11 +38,13 @@ public:
     }
 
     void stampa(){
-        cout <<"--------------" << endl;
+        cout << endl;
+        cout <<"Coda: " << endl;
         for(int i=start; i<stop; i++){
         cout << v[i] << endl; 
         } 
         cout <<"--------------" << endl;
+        cout << endl;
     }
 
 };
