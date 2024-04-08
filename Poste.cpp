@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class poste {
+class Poste {
 private:
     string S; // spedizione
     int R; //ricezione
@@ -11,7 +11,7 @@ private:
     Coda c = Coda(1000);
     
 public:
-    poste(string servizio){
+    Poste(string servizio){
 
         if (servizio == "spedizione"){
             c.enter(1);

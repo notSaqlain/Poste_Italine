@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "Coda.cpp"
-#include "poste.cpp"
+#include "Poste.cpp"
 
 using namespace std;
 
@@ -18,7 +18,7 @@ int main() {
     c.stampa();
 
     while(){
-        
+
         cout << "Seleziona servizio [1-3]: " << endl;
         cout << "1. Spedizione" << endl;
         cout << "2. Ricezione" << endl;
