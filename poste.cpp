@@ -21,6 +21,8 @@ public:
             finanzarie();
         } else {
             cout << "Servizio non disponibile" << endl;
+            c = Coda(1);
+            c.stampa();
         }
     }
 
