@@ -51,7 +51,6 @@ public:
     }
 
     void stampa() {
-        cout << "Servizio di " << servizio << endl;
         cout << "Clienti in coda: " << endl;
         cout << "Ricezione: ";
         stampaCoda(cR);
@@ -85,13 +84,16 @@ int main() {
 
         switch (scelta) {
         case 1:
-            Poste("spedizione").stampa();
+            Poste p = Poste("spedizione");
+            p.stampa();
             break;
         case 2:
-            Poste("ricezione").stampa();
+            Poste p1 = Poste("ricezione");
+            p1.stampa();
             break;
         case 3:
-            Poste("finanzarie").stampa();
+            Poste p2 = Poste("finanzarie");
+            p2.stampa();
             break;
         default:
             cout << "Servizio non disponibile" << endl;
