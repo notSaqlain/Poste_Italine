@@ -10,12 +10,12 @@ int main() {
     int persone = 0;
     cout << "Inserisci il numero di persone in coda: ";
     cin >> persone;
-    Coda c = Coda(persone);
-    c.stampa();
+    //Coda c = Coda(persone);
+    //c.stampa();
     for (int i=0; i<persone; i++){
-        c.enter(i);
+        //c.enter(i);
     }
-    c.stampa();
+    //c.stampa();
 
     while(true){
 
