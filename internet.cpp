@@ -40,14 +40,17 @@ public:
 
     void spedizione() {
         cout << "Servizio di spedizione" << endl;
+        cS.pop();
     }
 
     void ricezione() {
         cout << "Servizio di ricezione" << endl;
+        cR.pop();
     }
 
     void finanzarie() {
         cout << "Servizio finanzarie" << endl;
+        cF.pop();
     }
 
     void stampa() {
