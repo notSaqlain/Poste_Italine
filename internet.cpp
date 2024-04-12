@@ -13,6 +13,8 @@ private:
     queue<int> cF; // Coda per le finanzarie
 
 public:
+
+    Poste() {}
     Poste(string servizio) {
         this->servizio = servizio;
         addClient(tolower(servizio[0]));
@@ -82,23 +84,29 @@ int main() {
         int scelta;
         cin >> scelta;
 
+        Poste p;
+        Poste p1;
+        Poste p2;
+
+
+
         switch (scelta) {
-        case 1:
-            Poste p = Poste("spedizione");
-            p.stampa();
-            break;
-        case 2:
-            Poste p1 = Poste("ricezione");
-            p1.stampa();
-            break;
-        case 3:
-            Poste p2 = Poste("finanzarie");
-            p2.stampa();
-            break;
-        default:
-            cout << "Servizio non disponibile" << endl;
-            valido = false;
-            break;
+            case 1:
+                p = Poste("spedizione");
+                p.stampa();
+                break;
+            case 2:
+                p1 = Poste("ricezione");
+                p1.stampa();
+                break;
+            case 3:
+                p2 = Poste("finanzarie");
+                p2.stampa();
+                break;
+            default:
+                cout << "Servizio non disponibile" << endl;
+                valido = false;
+                break;
         }
         cout << "Vuoi continuare? [s/n]: ";
         cin >> risposta;
