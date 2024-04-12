@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <queue>
+#include <cctype>
 
 using namespace std;
 
@@ -88,8 +89,6 @@ int main() {
         Poste p1;
         Poste p2;
 
-
-
         switch (scelta) {
             case 1:
                 p = Poste("spedizione");
@@ -110,7 +109,7 @@ int main() {
         }
         cout << "Vuoi continuare? [s/n]: ";
         cin >> risposta;
-        if (risposta == 'n') {
+        if (tolower(risposta) == 'n'){
             valido = false;
         }
     }
