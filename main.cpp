@@ -14,8 +14,7 @@ int main() {
     int servizio;
     cin >> servizio;
 
-    switch (servizio)
-    {
+    switch (servizio) {
     case 1:
         Poste("spedizione");
         break;
@@ -29,6 +28,8 @@ int main() {
         cout << "Servizio non disponibile" << endl;
         break;
     }
+
+    
 
     return 0;
 }
