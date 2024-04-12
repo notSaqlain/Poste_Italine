@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 #include "Coda.cpp"
+
 
 using namespace std;
 
@@ -12,22 +14,29 @@ private:
     Coda cS = Coda(1000, "spedizione");
     Coda cF = Coda(1000, "finanzarie");
     
+    
 public:
     Poste(string servizio){
+
         this->servizio = servizio;
+        addClient(tolower(servizio[0]));
+        //addClient(servizio[0]);
+
+        /*
         if (servizio == "spedizione"){
-            Client('s');
+            addClient('s');
         } else if (servizio == "ricezione"){
-            Client('r');
+            addClient('r');
         } else if (servizio == "finanzarie"){
-            Client('f');
+            addClient('f');
         } else {
             cout << "Servizio non disponibile" << endl;
         }
+        */
 
     }
 
-    int Client(char service){
+    int addClient(char service){
         switch (service)
         {
         case 's':
@@ -44,6 +53,7 @@ public:
             return cF.exit();
         default:
             cout << "Servizio non disponibile" << endl;
+            return -1;
         }
 
     }
