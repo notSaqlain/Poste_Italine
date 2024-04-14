@@ -18,7 +18,6 @@ int main() {
         int scelta;
         cin >> scelta;
 
-
         switch (scelta) {
         case 1:
             Poste("spedizione");
