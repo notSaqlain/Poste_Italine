@@ -3,7 +3,6 @@
 #include <cctype>
 #include "Coda.cpp"
 
-
 using namespace std;
 
 class Poste {
